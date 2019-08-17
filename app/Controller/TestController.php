@@ -12,6 +12,6 @@ class TestController extends Controller
 {
     public function index()
     {
-        echo "<h3>欢迎来到hyperf</h3>";
+        return "<h3>欢迎来到hyperf</h3>";
     }
 }
