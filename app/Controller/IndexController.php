@@ -16,12 +16,6 @@ class IndexController extends Controller
 {
     public function index()
     {
-        $user = $this->request->input('user', 'Hyperf');
-        $method = $this->request->getMethod();
-
-        return [
-            'method' => $method,
-            'message' => "Hello {$user}.",
-        ];
+        echo "<h3>欢迎来到hyperf</h3>";
     }
 }
