@@ -4,6 +4,8 @@
 
 # 服务器地址
 
+http://47.98.143.87:9501
+
 # 文档
 
 [https://doc.hyperf.io/](https://doc.hyperf.io/)
