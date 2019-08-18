@@ -9,6 +9,8 @@ namespace App\Service;
 
 class UserService
 {
+    public $aa;
+
     public function getUserById()
     {
         return "用户信息";
