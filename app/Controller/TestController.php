@@ -13,7 +13,7 @@ use Hyperf\HttpServer\Annotation\AutoController;
 /**
  * Class TestController
  * @package App\Controller
- * @AutoController
+ * @Controller
  */
 class TestController extends Controller
 {
@@ -22,6 +22,10 @@ class TestController extends Controller
         return "<h3>欢迎来到hyperf</h3>";
     }
 
+    /**
+     * @return string
+     * @RequestMapping(path="index", methods="get,post")
+     */
     public function anonation()
     {
         return "注解定义路由";
