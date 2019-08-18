@@ -64,8 +64,8 @@
     "autoload": {
         "psr-4": {
             "App\\": "app/",
-            "Grpc\\GPBMetadata\\": "grpc/GPBMetadata",
-            "Grpc\\Grpc\\": "grpc/Grpc"
+            "GPBMetadata\\": "vendor/grpc/GPBMetadata",
+            "Grpc\\": "vendor/grpc/Grpc"
         },
         "files": []
     },
