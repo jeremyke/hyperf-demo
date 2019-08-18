@@ -9,6 +9,13 @@ declare(strict_types=1);
 
 namespace App\Controller;
 
+use Hyperf\HttpServer\Annotation\AutoController;
+
+/**
+ * Class GrpcController
+ * @package App\Controller
+ * @AutoController()
+ */
 class GrpcController extends Controller
 {
     public function hello()
