@@ -11,6 +11,7 @@ namespace App\Controller;
 use Hyperf\HttpServer\Annotation\AutoController;
 use Psr\Container\ContainerInterface;
 use App\Service\UserService;
+use Hyperf\Di\Annotation\Inject;
 
 /**
  * Class TestController
