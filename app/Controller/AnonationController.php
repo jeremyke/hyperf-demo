@@ -36,7 +36,7 @@ class AnonationController extends Controller
 
     public function index()
     {
-        return $this->userService;
+        var_dump($this->userService);
 
     }
 
