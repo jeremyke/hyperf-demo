@@ -9,7 +9,7 @@ declare(strict_types=1);
 namespace App\Controller;
 
 use Hyperf\HttpServer\Annotation\AutoController;
-use Psr\Container\ContainerInterface;
+use Hyperf\HttpServer\Annotation\Controller;
 use App\Service\UserService;
 use Hyperf\Di\Annotation\Inject;
 
@@ -24,7 +24,7 @@ class AnonationController extends Controller
      * @Inject()
      * @var UserService;
      */
-    public $userService;
+    private $userService;
 
     /**
      * @return string
