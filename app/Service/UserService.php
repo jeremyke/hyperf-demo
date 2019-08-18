@@ -5,7 +5,7 @@
  * Date: 2019/8/18
  * Time: 16:37
  */
-namespace App\Service\UserService;
+namespace App\Service;
 
 class UserService
 {
