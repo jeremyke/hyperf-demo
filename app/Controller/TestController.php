@@ -9,6 +9,8 @@ declare(strict_types=1);
 namespace App\Controller;
 
 use Hyperf\HttpServer\Annotation\AutoController;
+use Hyperf\HttpServer\Annotation\Controller;
+use Hyperf\HttpServer\Annotation\RequestMapping;
 
 /**
  * Class TestController
