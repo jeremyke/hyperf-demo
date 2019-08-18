@@ -21,6 +21,7 @@ use Hyperf\Di\Annotation\Inject;
 class AnonationController extends Controller
 {
     /**
+     * @Inject()
      * @var UserService;
      */
     public $userService;
@@ -28,10 +29,10 @@ class AnonationController extends Controller
     /**
      * @return string
      */
-    public function __construct(UserService $userService)
+    /*public function __construct(UserService $userService)
     {
         $this->userService =$userService;
-    }
+    }*/
 
 
     /*public function index()
