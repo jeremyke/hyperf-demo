@@ -22,7 +22,7 @@ class AnonationController extends Controller
 {
     /**
      * @Inject
-     * @var UserService;
+     * @var UserService
      */
     private $userService;
 
