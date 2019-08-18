@@ -17,7 +17,7 @@ use Hyperf\HttpServer\Annotation\RequestMapping;
  * @package App\Controller
  * @Controller
  */
-class TestController extends Controller
+class RouterController extends Controller
 {
     public function index()
     {
