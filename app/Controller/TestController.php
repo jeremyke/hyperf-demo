@@ -28,6 +28,6 @@ class TestController extends Controller
      */
     public function anonation()
     {
-        return "注解定义路由";
+        return "注解定义路由(第二种)";
     }
 }
