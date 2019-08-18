@@ -22,17 +22,16 @@ class AnonationController extends Controller
 {
     /**
      * @var UserService;
-     * @Inject()
      */
     public $userService;
 
     /**
      * @return string
      */
-    /*public function __construct(UserService $userService)
+    public function __construct(UserService $userService)
     {
         $this->userService =$userService;
-    }*/
+    }
 
 
     /*public function index()
