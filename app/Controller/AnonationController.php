@@ -21,7 +21,7 @@ use Hyperf\Di\Annotation\Inject;
 class AnonationController extends Controller
 {
     /**
-     * @Inject()
+     * @Inject
      * @var UserService;
      */
     private $userService;
