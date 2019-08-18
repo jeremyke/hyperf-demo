@@ -2,6 +2,7 @@
 namespace App\Grpc;
 
 use Hyperf\GrpcClient\BaseClient;
+use Grpc\HiUser;
 
 class HiClient extends BaseClient
 {
