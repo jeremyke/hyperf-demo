@@ -83,7 +83,7 @@ class BaseClient
         $deserialize
     ) {
         $streamId = $this->send($this->buildRequest($method, $argument));
-        //var_dump($this->recv($streamId), $deserialize);
+        var_dump($streamId, $deserialize);
         return Parser::parseResponse($this->recv($streamId), $deserialize);
     }
 
