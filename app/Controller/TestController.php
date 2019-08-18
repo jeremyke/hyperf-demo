@@ -26,7 +26,7 @@ class TestController extends Controller
 
     /**
      * @return string
-     * @RequestMapping(path="index", methods="get,post")
+     * @RequestMapping(path="anonation", methods="get,post")
      */
     public function anonation()
     {
