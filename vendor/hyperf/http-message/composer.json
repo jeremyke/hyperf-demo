@@ -1,0 +1,46 @@
+{
+    "name": "hyperf/http-message",
+    "type": "library",
+    "description": "microservice framework base on swoole",
+    "license": "MIT",
+    "keywords": [
+        "php",
+        "swoole",
+        "hyperf",
+        "http-message"
+    ],
+    "require": {
+        "psr/http-message": "^1.0",
+        "zendframework/zend-mime": "^2.7"
+    },
+    "require-dev": {
+        "swoft/swoole-ide-helper": "~1.0.0",
+        "phpunit/phpunit": "^5.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hyperf\\HttpMessage\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "HyperfTest\\HttpMessage\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        },
+        "hyperf": {
+        }
+    },
+    "bin": [
+    ],
+    "scripts": {
+        "cs-fix": "php-cs-fixer fix $1",
+        "test": "phpunit --colors=always"
+    }
+}
