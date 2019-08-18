@@ -24,7 +24,7 @@ class GrpcController extends Controller
             'credentials' => null,
         ]);
 
-        $request = new \Grpc\HiUser();
+        $request = new Grpc\HiUser();
         $request->setName('hyperf');
         $request->setSex(1);
 
