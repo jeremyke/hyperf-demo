@@ -43,7 +43,6 @@ class HiReply extends \Google\Protobuf\Internal\Message
      */
     public function getMessage()
     {
-        echo 7777;exit;
         return $this->message;
     }
 
