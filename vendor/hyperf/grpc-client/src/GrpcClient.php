@@ -244,14 +244,12 @@ class GrpcClient
         }
         $channel = $this->recvChannelMap[$streamId];
         if ($channel instanceof Channel) {
-            var_dump($this->timeout);
             $response = $channel->pop($timeout === null ? $this->timeout : $timeout);
             // Pop timeout
-            var_dump($response,$channel);
             if ($response === false && $channel->errCode === -1) {
                 unset($this->recvChannelMap[$streamId]);
             }
-
+            $response->data = "nihao";
             return $response;
         }
         return false;
