@@ -74,7 +74,6 @@ class Parser
      */
     public static function parseResponse($response, $deserialize): array
     {
-        var_dump($response, $deserialize);
         if (! $response) {
             return ['No response', self::GRPC_ERROR_NO_RESPONSE, $response];
         }
@@ -85,7 +84,6 @@ class Parser
         if ($grpc_status !== 0) {
             return [$response->headers['grpc-message'] ?? 'Unknown error', $grpc_status, $response];
         }
-        $response->data= "厉害哦";
         $data = $response->data;
         $reply = self::deserializeMessage($deserialize, $data);
         $status = (int) ($response->headers['grpc-status'] ?? 0 ?: 0);
