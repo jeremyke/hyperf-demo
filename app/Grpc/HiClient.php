@@ -10,7 +10,6 @@ class HiClient extends BaseClient
 {
     public function sayHello(HiUser $argument)
     {
-        var_dump(HiReply::class);exit;
         return $this->simpleRequest(
             '/grpc.hi/sayHello',
             $argument,
