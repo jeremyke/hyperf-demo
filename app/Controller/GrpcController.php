@@ -10,6 +10,7 @@ declare(strict_types=1);
 namespace App\Controller;
 
 use Grpc\HiUser;
+use Grpc\HiReply;
 use Hyperf\HttpServer\Annotation\AutoController;
 
 /**
@@ -30,7 +31,7 @@ class GrpcController extends Controller
         $request->setSex(1);
 
         /**
-         * @var \Grpc\HiReply $reply
+         * @var HiReply $reply
          */
         list($reply, $status) = $client->sayHello($request);
         var_dump($reply);
