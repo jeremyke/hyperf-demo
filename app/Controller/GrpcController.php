@@ -28,7 +28,6 @@ class GrpcController extends Controller
         $request = new HiUser();
         $request->setName('hyperf');
         $request->setSex(1);
-        var_dump($request);exit;
         /**
          * @var HiReply $reply
          */
