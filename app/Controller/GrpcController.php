@@ -33,7 +33,7 @@ class GrpcController extends Controller
          * @var \Grpc\HiReply $reply
          */
         list($reply, $status) = $client->sayHello($request);
-
+        var_dump($reply);
         $message = $reply->getMessage();
         $user = $reply->getUser();
 
