@@ -25,7 +25,7 @@ class GrpcController extends Controller
         $client = new \App\Grpc\HiClient('127.0.0.1:9503', [
             'credentials' => null,
         ]);
-
+        var_dump($client);exit;
         $request = new HiUser();
         $request->setName('hyperf');
         $request->setSex(1);
