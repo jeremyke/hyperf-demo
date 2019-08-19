@@ -74,7 +74,6 @@ class Parser
      */
     public static function parseResponse($response, $deserialize): array
     {
-        var_dump($response);exit;
         if (! $response) {
             return ['No response', self::GRPC_ERROR_NO_RESPONSE, $response];
         }

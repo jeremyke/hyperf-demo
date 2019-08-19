@@ -242,16 +242,19 @@ class GrpcClient
         if (! $this->isConnected() || $streamId <= 0 || ! $this->isStreamExist($streamId)) {
             return false;
         }
+        echo 666;
         $channel = $this->recvChannelMap[$streamId];
         if ($channel instanceof Channel) {
             $response = $channel->pop($timeout === null ? $this->timeout : $timeout);
             // Pop timeout
+            var_dump($response,$channel);
             if ($response === false && $channel->errCode === -1) {
                 unset($this->recvChannelMap[$streamId]);
             }
 
             return $response;
         }
+        echo 888;
 
         return false;
     }
